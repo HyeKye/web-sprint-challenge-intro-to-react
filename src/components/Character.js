@@ -5,9 +5,16 @@ import styled from 'styled-components';
 import CharacterInfo from "./CharacterInfo";
 
 const CharacterStyle = styled.div`
-display: flex;
-flex-direction: row;
+div{
+    display: flex;
+    padding: 5px;
+}
 
+h2{
+    background-color: rgb(255,255,255,0.8);
+    display: flex;
+    width: 10%
+}
 `;
 
 function Character() {
@@ -32,7 +39,7 @@ function Character() {
                 return (
                     <CharacterStyle>
                         <span>
-                            <h2>{starWarsData.name}</h2>
+                            <h2 class="swName">{starWarsData.name}</h2>
                             <CharacterInfo key={starWarsData.id} starWarsData={starWarsData} />
                         </span>
                     </CharacterStyle>

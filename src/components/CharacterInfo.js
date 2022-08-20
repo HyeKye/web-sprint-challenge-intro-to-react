@@ -3,10 +3,11 @@ import styles from "styled-components";
 
 const CharInfoStyles = styles.div`
 div{
-    border:5px dashed #a9def9;
-    width: 10%
+    width: 20%
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255, 0.8);
 }
-color: black;
 `;
 
 function CharacterInfo(props) {
@@ -15,13 +16,8 @@ function CharacterInfo(props) {
     return (
         <CharInfoStyles>
             <div>
-                <p>Gender: {starWarsData.gender}</p>
-                <p>Height: {starWarsData.height}</p>
-                <p>Mass: {starWarsData.mass}</p>
-                <p>DoB: {starWarsData.birth_year}</p>
-                <p>Eye Color: {starWarsData.eye_color}</p>
-                <p>Hair Color: {starWarsData.hair_color}</p>
-                <p>Skin Color: {starWarsData.skin_color}</p>
+                <p>Gender: {starWarsData.gender} || Height: {starWarsData.height} || Mass: {starWarsData.mass} || DoB: {starWarsData.birth_year} || Eye Color: {starWarsData.eye_color} || Hair Color: {starWarsData.hair_color} || Skin Color: {starWarsData.skin_color}
+                </p>
             </div>
         </CharInfoStyles>
     );
